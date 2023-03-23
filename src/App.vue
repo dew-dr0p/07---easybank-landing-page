@@ -10,6 +10,6 @@
 </template>
 
 <script setup lang="ts">
-import MainContent from '@/components/HelloWorld.vue'
+import MainContent from '@/components/MainContent.vue'
 import NavBar from '@/components/NavBar.vue';
 </script>
