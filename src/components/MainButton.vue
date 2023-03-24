@@ -1,5 +1,5 @@
 <template>
-      <v-btn rounded="pill" size="large" class="px-10">{{ text }}</v-btn>
+      <v-btn rounded="pill" size="large" class="px-10 text-capitalize">{{ text }}</v-btn>
 </template>
 
 <script setup lang="ts">

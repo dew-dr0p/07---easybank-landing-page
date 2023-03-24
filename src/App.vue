@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar flat color="text-lightGrayishBlue" class="py-3">
+    <v-app-bar flat color="text-lightGrayishBlue" class="py-3" style="width: 100vw;">
       <NavBar />
     </v-app-bar>
     <v-main>
