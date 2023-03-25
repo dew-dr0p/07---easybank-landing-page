@@ -83,9 +83,6 @@ const articles = [
         <v-row style="background-color: #FAFAFA;">
             <MainArticles v-for="{image, author, title, text} in articles" :image="image" :author="author" :title="title" :text="text" />
         </v-row>
-        <v-row>
-            
-        </v-row>
     </v-container>
 </template>
 
