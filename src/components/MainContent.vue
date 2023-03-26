@@ -57,7 +57,7 @@ const articles = [
 <template>
     <v-container>
         <v-row style="height: calc(80vh - 64px); background-color: #FAFAFA;">
-            <v-col cols="5" class="pa-10" style="margin-top: 10rem;">
+            <v-col cols="5" class="ma-auto pa-10">
                 <h1 class="text-darkBlue font-weight-regular text-h2 mb-10">Next generation digital banking</h1>
                 <p class="text-grayishBlue mb-10">Take your financial life online. Your Easybank account will be a one-stop-shop 
                 for spending, saving, budgeting, investing, and much more.</p>
@@ -67,16 +67,22 @@ const articles = [
             <v-img src="/assets/bg-intro-desktop.svg" absolute cover class="float"></v-img>
             <v-img src="/assets/image-mockups.png" absolute class="float" style="max-height: 100vh;"></v-img>
         </v-row>
-        <v-row style="background-color: #F3F4F6;">
-                <v-col cols="6" class="pa-10">
-                    <h3 class="text-darkBlue font-weight-regular text-h3 mt-16 mb-10">Why choose Easybank?</h3>
-                    <p class="text-grayishBlue">We leverage Open Banking to turn your bank account into your financial hub. Control 
-                    your finances like never before.</p>
-                </v-col>
-        </v-row>
-        <v-row style="background-color: #F3F4F6;">
-            <MainBenefits v-for="{image, title, text} in benefits" :image="image" :title="title" :text="text" />
-        </v-row>
+    </v-container>
+    <div style="background-color: #F3F4F6;">
+        <v-container>
+            <v-row style="background-color: #F3F4F6;">
+                    <v-col cols="6" class="pa-10">
+                        <h3 class="text-darkBlue font-weight-regular text-h3 mt-16 mb-10">Why choose Easybank?</h3>
+                        <p class="text-grayishBlue">We leverage Open Banking to turn your bank account into your financial hub. Control 
+                        your finances like never before.</p>
+                    </v-col>
+            </v-row>
+            <v-row style="background-color: #F3F4F6;">
+                <MainBenefits v-for="{image, title, text} in benefits" :image="image" :title="title" :text="text" />
+            </v-row>
+        </v-container>
+    </div>
+    <v-container>
         <v-row style="background-color: #FAFAFA;">
             <h3 class="text-darkBlue font-weight-regular text-h3 mt-16 pa-10 pb-5">Latest Articles</h3>
         </v-row>
