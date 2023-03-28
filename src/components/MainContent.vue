@@ -58,7 +58,7 @@ const articles = [
     <v-container>
         <v-row style="height: calc(80vh - 64px); background-color: #FAFAFA;">
             <v-col cols="5" class="ma-auto pa-10">
-                <h1 class="text-darkBlue font-weight-regular text-h2 mb-10">Next generation digital banking</h1>
+                <h1 class="text-darkBlue font-weight-regular text-md-h3 text-lg-h2 mb-10">Next generation digital banking</h1>
                 <p class="text-grayishBlue mb-10">Take your financial life online. Your Easybank account will be a one-stop-shop 
                 for spending, saving, budgeting, investing, and much more.</p>
                 <MainButton text="Request Invite" />

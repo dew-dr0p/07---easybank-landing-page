@@ -10,7 +10,7 @@ window.onload = () => {
 
 <template>
     <v-container>
-        <v-row no-gutters class="mx-" style="background-color: #2D314D;">
+        <v-row no-gutters style="background-color: #2D314D;">
             <v-col cols="2" class="ma-10" style="width: fit-content;">
                 <object data="/assets/logo.svg" type="image/svg+xml" class="text-white mb-14 w-100"></object>
                 <div class="d-flex mb-5">
@@ -31,10 +31,10 @@ window.onload = () => {
                 <p class="text-lightGrayishBlue mb-5">Support</p>
                 <p class="text-lightGrayishBlue mb-5">Privacy Policy</p>
             </v-col>
-            <v-spacer></v-spacer>
-            <v-col cols="3" class="ma-10">
-                <MainButton text="Request Invite" class="float-right" />
-                <p class="text-grayishBlue mt-16 float-right">© Easybank. All Rights Reserved</p>
+            <v-spacer class="d-md-none d-lg-block"></v-spacer>
+            <v-col cols="3" class="ma-10 mr-0">
+                <MainButton text="Request Invite" class="float-right mb-5" />
+                <p class="text-grayishBlue mt-16 text-right">© Easybank. All Rights Reserved</p>
             </v-col>
         </v-row>
     </v-container>
