@@ -56,24 +56,35 @@ const articles = [
 
 <template>
     <v-container>
-        <v-row style="height: calc(80vh - 64px); background-color: #FAFAFA;">
-            <v-col cols="5" class="ma-auto pa-10">
+        <v-row class="d-md-flex d-none" style="height: calc(80vh - 64px); background-color: #FAFAFA;">
+            <v-col cols="12" md="5" class="ma-auto pa-10">
                 <h1 class="text-darkBlue font-weight-regular text-md-h3 text-lg-h2 mb-10">Next generation digital banking</h1>
                 <p class="text-grayishBlue mb-10">Take your financial life online. Your Easybank account will be a one-stop-shop 
                 for spending, saving, budgeting, investing, and much more.</p>
-                <MainButton text="Request Invite" />
+                <MainButton text="Request Invite" class="" />
             </v-col>
             <v-col></v-col>
             <v-img src="/assets/bg-intro-desktop.svg" absolute cover class="float"></v-img>
+            <v-img src="/assets/image-mockups.png" absolute class="float" style="max-height: 100vh;"></v-img>
+        </v-row>
+        <v-row class="d-md-none" style="min-height: calc(100vh - 64px); background-color: #FAFAFA;">
+            <v-col class="d-md-none"></v-col>
+            <v-col cols="12" md="5" class="ma-auto pa-10 d-flex flex-column align-center">
+                <h1 class="text-darkBlue font-weight-regular text-md-h3 text-lg-h2 mb-10 text-center">Next generation digital banking</h1>
+                <p class="text-grayishBlue mb-10 text-center">Take your financial life online. Your Easybank account will be a one-stop-shop 
+                for spending, saving, budgeting, investing, and much more.</p>
+                <MainButton text="Request Invite" />
+            </v-col>
+            <v-img src="/assets/bg-intro-mobile.svg" absolute cover class="float2"></v-img>
             <v-img src="/assets/image-mockups.png" absolute class="float" style="max-height: 100vh;"></v-img>
         </v-row>
     </v-container>
     <div style="background-color: #F3F4F6;">
         <v-container>
             <v-row style="background-color: #F3F4F6;">
-                    <v-col cols="6" class="pa-10">
-                        <h3 class="text-darkBlue font-weight-regular text-h3 mt-16 mb-10">Why choose Easybank?</h3>
-                        <p class="text-grayishBlue">We leverage Open Banking to turn your bank account into your financial hub. Control 
+                    <v-col lg="6" class="pa-10">
+                        <h3 class="text-darkBlue font-weight-regular text-h3 mt-16 mb-10 text-center text-lg-left">Why choose Easybank?</h3>
+                        <p class="text-grayishBlue text-center text-lg-left">We leverage Open Banking to turn your bank account into your financial hub. Control 
                         your finances like never before.</p>
                     </v-col>
             </v-row>
@@ -83,8 +94,8 @@ const articles = [
         </v-container>
     </div>
     <v-container>
-        <v-row style="background-color: #FAFAFA;">
-            <h3 class="text-darkBlue font-weight-regular text-h3 mt-16 pa-10 pb-5">Latest Articles</h3>
+        <v-row no-gutters style="background-color: #FAFAFA;">
+            <h3 class="text-darkBlue font-weight-regular text-h3 mt-16 pa-10 pb-5 pl-lg-0 text-center text-lg-left w-100">Latest Articles</h3>
         </v-row>
         <v-row style="background-color: #FAFAFA;">
             <MainArticles v-for="{image, author, title, text} in articles" :image="image" :author="author" :title="title" :text="text" />
@@ -98,6 +109,13 @@ const articles = [
     right: -20%;
     top: 0;
     left: 43.33%;
+    max-height: 80vh;
+}
+.float2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
     max-height: 80vh;
 }
 </style>
