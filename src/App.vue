@@ -27,7 +27,7 @@ import NavBar from '@/components/NavBar.vue';
 import FooterBar from './components/FooterBar.vue';
 import { ref } from 'vue';
 
-const drawer = ref(true)
+const drawer = ref(false)
 
 const change = () => {
   drawer.value = !drawer.value
